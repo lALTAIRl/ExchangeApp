@@ -47,7 +47,7 @@ namespace Exchange_App.Controllers
         public async Task<IActionResult> UpdateCurrency(Currency currency)
         {
             await _currencyRepository.UpdateCurrencyAsync(currency);
-            return RedirectToAction("CurrencyList");
+            return RedirectToAction("ViewCurrency");
         }
 
         public async Task<IActionResult> DeleteCurrency(Currency currency)

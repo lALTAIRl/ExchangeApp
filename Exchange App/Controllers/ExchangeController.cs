@@ -27,6 +27,7 @@ namespace Exchange_App.Controllers
             if (exchange.Client.AmountCurrencyUsedToday < 1000)
             {
                 exchange.Client.AmountCurrencyUsedToday += exchange.AmountClientCurrency;
+                exchange.AmountTargetCurrency = exchange.AmountClientCurrency * exchange.ClientCurrency.SellingPrice / exchange.TargetCurrency.PurchasePrice;
                 await _exchangeRepository.CreateExchangeAsync(exchange);
                 return RedirectPermanent("~/User/AddUser");
             }
