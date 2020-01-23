@@ -1,8 +1,10 @@
 ﻿using Exchange_App.DAL.Data;
 using Exchange_App.DAL.Entities;
 using Exchange_App.DAL.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,21 +19,30 @@ namespace Exchange_App.DAL.Repositories
             _context = context;
         }
 
+        public async Task CreateExchangeAsync(Exchange exchange)
+        {
+            await _context.AddAsync(exchange);
+            await Save();
+        }
+
+        public async Task<IEnumerable<Exchange>> GetAllExchangesAsync()
+        {
+            return await _context.Set<Exchange>().AsNoTracking().ToListAsync();
+        }
+
+        public async Task<Exchange> GetExchangeByIdAsync(int id)
+        {
+            return await _context.Set<Exchange>().FindAsync(id);
+        }
+
         public async Task Save() => await _context.SaveChangesAsync();
 
-        public Task CreateNewsAsync(Exchange exchange)
+        public async Task<IQueryable<Exchange>> SelectExchangeAsync(Func<Exchange, bool> predicate)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task DeleteNewsAsync(Exchange exchange)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Exchange> GetNewsByIdAsync(int id)
-        {
-            throw new NotImplementedException();
+            return await Task.Run(() =>
+            {
+                return _context.Set<Exchange>().AsNoTracking().Where(predicate).AsQueryable();
+            });
         }
     }
 }

@@ -18,8 +18,8 @@ namespace Exchange_App.DAL.Entities
 
         public Currency TargetCurrency { get; set; }
 
-        public int AmountClientCurrency { get; set; }
+        public double AmountClientCurrency { get; set; }
 
-        public int AmountTargetCurrency { get; set; }
+        public double AmountTargetCurrency { get; set; }
     }
 }

@@ -8,12 +8,10 @@ namespace Exchange_App.DAL.Interfaces
 {
     public interface IUserRepository
     {
-        Task<User> GetNewsByIdAsync(int id);
+        Task<IEnumerable<User>> GetAllUsersAsync();
 
-        Task CreateNewsAsync(User user);
+        Task<User> GetUserByIdAsync(int id);
 
-        Task UpdateNewsAsync(User user);
-
-        Task DeleteNewsAsync(User user);
+        Task CreateUserAsync(User user);
     }
 }

@@ -8,12 +8,14 @@ namespace Exchange_App.DAL.Interfaces
 {
     public interface ICurrencyRepository
     {
-        Task<Currency> GetNewsByIdAsync(int id);
+        Task<IEnumerable<Currency>> GetAllCurrencyAsync();
 
-        Task CreateNewsAsync(Currency currency);
+        Task<Currency> GetCurrencyByIdAsync(int id);
 
-        Task UpdateNewsAsync(Currency currency);
+        Task CreateCurrencyAsync(Currency currency);
 
-        Task DeleteNewsAsync(Currency currency);
+        Task UpdateCurrencyAsync(Currency currency);
+
+        Task DeleteCurrencyAsync(Currency currency);
     }
 }

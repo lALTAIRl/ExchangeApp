@@ -5,6 +5,11 @@ C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchan
 C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchange App.runtimeconfig.json
 C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchange App.runtimeconfig.dev.json
 C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchange App.dll
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchange App.pdb
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchange App.Views.dll
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchange App.Views.pdb
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchange App.DAL.dll
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchange App.DAL.pdb
 C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.csprojAssemblyReference.cache
 C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.RazorAssemblyInfo.cache
 C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.RazorAssemblyInfo.cs
@@ -22,3 +27,17 @@ C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\
 C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.RazorTargetAssemblyInfo.cache
 C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.RazorTargetAssemblyInfo.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.Views.pdb
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.csproj.CopyComplete
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.dll
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.pdb
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\User\UserList.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\User\AddUser.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Curency\CurrencyList.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Curency\ViewCurrency.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Curency\EditCurrency.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Curency\AddCurrency.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Exchange\ViewTransaction.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Exchange\ViewAllTransactinos.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Exchange\ViewUserTransactionsStatistic.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Exchange\StartTransaction.cshtml.g.cs

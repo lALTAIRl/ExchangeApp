@@ -5,3 +5,6 @@ C:\Users\ALTAIR\Desktop\Exchange App\Exchange App.DAL\obj\Debug\netcoreapp3.1\Ex
 C:\Users\ALTAIR\Desktop\Exchange App\Exchange App.DAL\obj\Debug\netcoreapp3.1\Exchange App.DAL.AssemblyInfo.cs
 C:\Users\ALTAIR\Desktop\Exchange App\Exchange App.DAL\bin\Debug\netcoreapp3.1\Exchange App.DAL.runtimeconfig.json
 C:\Users\ALTAIR\Desktop\Exchange App\Exchange App.DAL\bin\Debug\netcoreapp3.1\Exchange App.DAL.runtimeconfig.dev.json
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App.DAL\bin\Debug\netcoreapp3.1\Exchange App.DAL.pdb
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App.DAL\obj\Debug\netcoreapp3.1\Exchange App.DAL.dll
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App.DAL\obj\Debug\netcoreapp3.1\Exchange App.DAL.pdb
