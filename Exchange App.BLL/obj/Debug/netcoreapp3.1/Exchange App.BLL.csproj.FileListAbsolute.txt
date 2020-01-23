@@ -1,0 +1,5 @@
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App.BLL\bin\Debug\netcoreapp3.1\Exchange App.BLL.deps.json
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App.BLL\bin\Debug\netcoreapp3.1\Exchange App.BLL.dll
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App.BLL\obj\Debug\netcoreapp3.1\Exchange App.BLL.csprojAssemblyReference.cache
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App.BLL\obj\Debug\netcoreapp3.1\Exchange App.BLL.AssemblyInfoInputs.cache
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App.BLL\obj\Debug\netcoreapp3.1\Exchange App.BLL.AssemblyInfo.cs

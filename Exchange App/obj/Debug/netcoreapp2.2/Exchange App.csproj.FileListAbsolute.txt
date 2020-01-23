@@ -1,0 +1,24 @@
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchange App.deps.json
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchange App.runtimeconfig.json
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchange App.runtimeconfig.dev.json
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\bin\Debug\netcoreapp2.2\Exchange App.dll
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.csprojAssemblyReference.cache
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.RazorAssemblyInfo.cache
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.RazorAssemblyInfo.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.AssemblyInfoInputs.cache
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.AssemblyInfo.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.TagHelpers.input.cache
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.TagHelpers.output.cache
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.RazorCoreGenerate.cache
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.RazorTargetAssemblyInfo.cache
+C:\Users\ALTAIR\Desktop\Exchange App\Exchange App\obj\Debug\netcoreapp2.2\Exchange App.RazorTargetAssemblyInfo.cs
