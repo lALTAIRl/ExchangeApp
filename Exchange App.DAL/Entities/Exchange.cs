@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Exchange_App.DAL.Entities
@@ -8,9 +9,8 @@ namespace Exchange_App.DAL.Entities
     {
         public int Id { get; set; }
 
-        public string Type { get; set; }
-
-        public User Cashier { get; set; }
+        [Required]
+        public string Cashier { get; set; }
 
         public User Client { get; set; }
 
@@ -18,6 +18,9 @@ namespace Exchange_App.DAL.Entities
 
         public Currency TargetCurrency { get; set; }
 
+        [Required]
+        [Range(1, 1000,
+        ErrorMessage = "Value for {0} must be between {1} and {2}.")]
         public double AmountClientCurrency { get; set; }
 
         public double AmountTargetCurrency { get; set; }

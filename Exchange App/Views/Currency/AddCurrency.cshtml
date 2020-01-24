@@ -1,0 +1,43 @@
+﻿@model Exchange_App.DAL.Entities.Currency
+@{
+    ViewData["Title"] = "AddCurrency";
+}
+
+    <form asp-action="CreateCurrency" method="post" class="form-horizontal">
+
+        <div class="form-group">
+            <label asp-for="CurrencyName" class="col-sm-2 control-label">CurrencyName</label>
+            <div class="col-sm-5">
+                <input asp-for="CurrencyName" class="form-control" placeholder="CurrencyName">
+                <span asp-validation-for="CurrencyName" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="SellingPrice" class="col-sm-2 control-label">SellingPrice</label>
+            <div class="col-sm-5">
+                <input asp-for="SellingPrice" class="form-control" placeholder="SellingPrice">
+                <span asp-validation-for="SellingPrice" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="PurchasePrice" class="col-sm-2 control-label">PurchasePrice</label>
+            <div class="col-sm-5">
+                <input asp-for="PurchasePrice" class="form-control" placeholder="PurchasePrice">
+                <span asp-validation-for="PurchasePrice" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class=" col-sm-2">
+                <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+
+    </form>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js"></script>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>

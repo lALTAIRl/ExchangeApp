@@ -25,8 +25,15 @@ namespace Exchange_App.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateCurrency(Currency currency)
         {
-            await _currencyRepository.CreateCurrencyAsync(currency);
-            return RedirectToAction("CurrencyList");
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                await _currencyRepository.CreateCurrencyAsync(currency);
+                return RedirectToAction("CurrencyList");
+            }
         }
 
         public async Task<IActionResult> CurrencyList()
@@ -44,10 +51,18 @@ namespace Exchange_App.Controllers
             return View(await _currencyRepository.GetCurrencyByIdAsync(id));
         }
 
+        [HttpPost]
         public async Task<IActionResult> UpdateCurrency(Currency currency)
         {
-            await _currencyRepository.UpdateCurrencyAsync(currency);
-            return RedirectToAction("ViewCurrency");
+            if(!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                await _currencyRepository.UpdateCurrencyAsync(currency);
+                return RedirectToAction("ViewCurrency", new { id = currency.Id });
+            }
         }
 
         public async Task<IActionResult> DeleteCurrency(Currency currency)

@@ -27,22 +27,15 @@ namespace Exchange_App.DAL.Repositories
 
         public async Task<IEnumerable<Exchange>> GetAllExchangesAsync()
         {
-            return await _context.Set<Exchange>().AsNoTracking().ToListAsync();
+            return await _context.Set<Exchange>().Include(e => e.ClientCurrency).Include(e => e.Client).Include(e => e.TargetCurrency).ToListAsync();
         }
 
         public async Task<Exchange> GetExchangeByIdAsync(int id)
         {
-            return await _context.Set<Exchange>().FindAsync(id);
+            var xchanges = await GetAllExchangesAsync();
+            return xchanges.FirstOrDefault(e => e.Id == id);
         }
 
         public async Task Save() => await _context.SaveChangesAsync();
-
-        public async Task<IQueryable<Exchange>> SelectExchangeAsync(Func<Exchange, bool> predicate)
-        {
-            return await Task.Run(() =>
-            {
-                return _context.Set<Exchange>().AsNoTracking().Where(predicate).AsQueryable();
-            });
-        }
     }
 }

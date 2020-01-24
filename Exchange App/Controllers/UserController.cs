@@ -25,13 +25,15 @@ namespace Exchange_App.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateUser(User user)
         {
-            await _userRepository.CreateUserAsync(user);
-            return RedirectToAction("~/Exchange/StartTransaction");
-        }
-
-        public async Task<IActionResult> UserList()
-        {
-            return View(await _userRepository.GetAllUsersAsync());
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                await _userRepository.CreateUserAsync(user);
+                return RedirectToAction("StartTransaction", "Exchange", new { id = user.Id });
+            }
         }
     }
 }

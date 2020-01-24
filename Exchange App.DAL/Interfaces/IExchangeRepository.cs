@@ -15,7 +15,5 @@ namespace Exchange_App.DAL.Interfaces
 
         Task CreateExchangeAsync(Exchange exchange);
 
-        Task<IQueryable<Exchange>> SelectExchangeAsync(Func<Exchange, bool> predicate);
-
     }
 }

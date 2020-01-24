@@ -1,0 +1,27 @@
+﻿@model List<Exchange_App.DAL.Entities.Currency>
+@{
+    ViewData["Title"] = "CurrencyList";
+}
+
+@foreach (var currency in Model)
+{
+    <div class="currency_container">
+        <div class="control-label" align="center">
+            <a asp-action="ViewCurrency" asp-route-id="@currency.Id"><h1><b>@currency.CurrencyName</b></h1></a>
+        </div>
+
+        <div class="currency_info">
+            <p>
+                <span>Purchase price</span>
+                <span>@currency.PurchasePrice</span>
+            </p>
+            <p>
+                <span>Selling price</span>
+                <span>@currency.SellingPrice</span>
+            </p>
+        </div>
+
+    </div>
+}
+
+<a class="btn btn-primary" asp-action="AddCurrency">Add new currency</a>

@@ -1,0 +1,37 @@
+﻿@model List<Exchange_App.DAL.Entities.Exchange>
+@{
+    ViewData["Title"] = "ViewAllTransactions";
+} 
+
+@foreach (var exchange in Model)
+{
+    <div class="currency_container">
+        <div class="control-label" align="center">
+            <a asp-action="ViewTransaction" asp-route-id="@exchange.Id"><h1><b>@exchange.Id</b></h1></a>
+        </div>
+
+        <div class="currency_info">
+            <p>
+                <span>Cashier: </span>
+                <span>@exchange.Cashier</span>
+            </p>
+            <p>
+                <span>Client: </span>
+                <span>@exchange.Client.Name</span>
+                <span>@exchange.Client.Surname</span>
+            </p>
+            <p>
+                <span>Client Currency: </span>
+                <span>@exchange.ClientCurrency.CurrencyName</span>
+                <span>@exchange.ClientCurrency.SellingPrice</span>
+                <span>@exchange.AmountClientCurrency</span>
+            </p>
+            <p>
+                <span>Target Currency: </span>
+                <span>@exchange.TargetCurrency.CurrencyName</span>
+                <span>@exchange.TargetCurrency.SellingPrice</span>
+                <span>@exchange.AmountTargetCurrency</span>
+            </p>
+        </div>
+    </div>
+}

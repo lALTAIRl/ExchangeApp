@@ -1,7 +1,101 @@
-﻿
+﻿@using  Exchange_App.DAL.Entities;
+@model Exchange_App.DAL.Entities.Exchange
 @{
-    ViewData["Title"] = "StartTransaction";
+    ViewData["Title"] = "Start Transaction";
 }
+@{
+    IEnumerable<Currency> currencies = ViewData["Currency"] as IEnumerable<Currency>;
+}
+    <form asp-action="CreateExchange" method="post" class="form-horizontal">
 
-<h1>StartTransaction</h1>
+        <div class="form-group" >
+            <label asp-for=@Model.Client.Id class="col-sm-2 control-label">ClientId</label>
+            <div class="col-sm-5">
+                <input asp-for=@Model.Client.Id class="form-control" value=@ViewData["Id"]>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for=@Model.Client.Name class="col-sm-2 control-label">ClientName</label>
+            <div class="col-sm-5">
+                <input asp-for=@Model.Client.Name class="form-control" value=@ViewData["Name"]>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for=@Model.Client.Surname class="col-sm-2 control-label">ClientSurname</label>
+            <div class="col-sm-5">
+                <input asp-for=@Model.Client.Surname class="form-control" value=@ViewData["Surname"]>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Cashier" class="col-sm-2 control-label">Cashier</label>
+            <div class="col-sm-5">
+                <input asp-for="Cashier" class="form-control" placeholder="Cashier">
+                <span asp-validation-for="Cashier" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ClientCurrency.Id" class="col-sm-2 control-label">ClientCurrency</label>
+            <div class="col-sm-5">
+                <select asp-for="ClientCurrency.Id" class="form-control">
+                    @foreach (var currency in currencies)
+                    {
+                        <option value="@currency.Id">@currency.CurrencyName</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            <label asp-for="ClientCurrency" class="col-sm-2 control-label">ClientCurrency</label>
+            <div class="col-sm-5">
+                <input asp-for="ClientCurrency" class="form-control" placeholder="ClientCurrency">
+                <span asp-validation-for="ClientCurrency" />
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            <label asp-for="AmountClientCurrency" class="col-sm-2 control-label">AmountClientCurrency</label>
+            <div class="col-sm-5">
+                <input data-bind="textInput: AmountClientCurrency" asp-for="AmountClientCurrency" class="form-control" placeholder="AmountClientCurrency">
+                <span asp-validation-for="AmountClientCurrency" />
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label asp-for="TargetCurrency.Id" class="col-sm-2 control-label">TargetCurrency</label>
+            <div class="col-sm-5">
+                <select asp-for="TargetCurrency.Id" class="form-control">
+                    @foreach (var currency in currencies)
+                    {
+                        <option value="@currency.Id">@currency.CurrencyName</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            <label asp-for="TargetCurrency" class="col-sm-2 control-label">TargetCurrency</label>
+            <div class="col-sm-5">
+                <input asp-for="TargetCurrency" class="form-control" placeholder="TargetCurrency">
+                <span asp-validation-for="TargetCurrency" />
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            <div class=" col-sm-2">
+                <button type="submit" class="btn btn-primary">Confirm</button>
+            </div>
+        </div>
+
+    </form>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js"></script>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
 
